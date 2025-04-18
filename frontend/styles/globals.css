@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.bg-radial-custom {
+  background: radial-gradient(
+    circle,
+    rgba(44, 122, 153, 1) 0%,
+    rgba(186, 213, 230, 1) 0%,
+    rgba(237, 237, 237, 1) 100%
+  );
+}
+.dot-animate {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.dot-animate:nth-child(1) {
+  animation-delay: 0s; /* First dot appears immediately */
+}
+
+.dot-animate:nth-child(2) {
+  animation-delay: 0.5s; /* Second dot appears after 0.5s */
+}
+
+.dot-animate:nth-child(3) {
+  animation-delay: 1s; /* Third dot appears after 1s */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
