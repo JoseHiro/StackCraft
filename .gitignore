@@ -1,0 +1,17 @@
+# Ignore environment variables and system files
+.env
+.DS_Store
+
+# Ignore node modules (if you run anything in root)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
+
+# IDE/editor files
+.vscode/
+.idea/
